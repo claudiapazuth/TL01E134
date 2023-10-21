@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTwo">
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/btnimagen"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Ver Imagen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/btncompartir"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/btnatras"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:text="Atras"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/btncompartir"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:text="Compartir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="152dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toEndOf="@+id/btneliminar"
+        app:layout_constraintTop_toBottomOf="@+id/btnimagen"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="149dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncompartir"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="275dp"
+        android:layout_height="505dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ActivityList">
+
+
+        <ListView
+            android:id="@+id/listpersonas"
+            android:layout_width="wrap_content"
+            android:layout_height="517dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Compartir"
+            app:layout_constraintTop_toBottomOf="@+id/listpersonas" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="152dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Buscar"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/btnatras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
